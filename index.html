@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Principal</title>
+
+
+    <link rel="stylesheet" href="./css/paginas.css">
+    <link rel="stylesheet" href="./css/inicio.css">
+
+</head>
+
+<body>
+
+    <div id="pagina">
+
+        <!-- Encabezado -->
+        <header id="barraprincipal">
+            <div id="foto2">
+                <img class="miFoto" src="imagenes/torogoz.jpeg" alt="" />
+            </div>
+            <div id="titulo">
+                <h1 class="animacion-titulo">Poemario</h1>
+                <h1 class="animacion-titulo">Corazón de Torogoz </h1>
+                <h1 class="animacion-titulo">Poesía salvadoreña 2024</h1>
+            </div>
+            <div id="foto1">
+                <img class="miFoto" src="imagenes/escudo120.jpg" alt="" />
+            </div>
+        </header>
+
+
+
+        <!-- Sección Bases para participar -->
+        <section id="bases">
+
+            <h2 class="bases-invitacion">¡Invitación a participar!</h2>
+
+            <div class="bases-titulo-poemario">
+                <h3>En el Poemario</h3>
+                <h3>Corazón de Torogoz</h3>
+            </div>
+
+
+            <div class="bases-texto">
+                <h3 class="bases-texto-titulo">Bases</h3>
+                <p>1. Puede participar cualquier persona mayor de 18 años y de nacionalidad
+                    salvadoreña ya sea que resida en el país o en el exterior.<br><br>
+                    2. El participante concede permiso para que sus escritos sean incluidos
+                    en el poemario sin percibir ninguna compesación económica o de cualquier otro
+                    tipo, sin perjuicio de los derechos de autor del participante sobre sus escritos.<br><br>
+                    3. El participante puede optar a un máximo de diez páginas, independiente del número de
+                    escritos, en estas, se incluye una pequeña biografía y foto.<br><br>
+                    4. El poemario estará a la venta en Amazon donde cada participante
+                    podra hacer los pedidos correspondientes.<br><br>
+                    5. La fecha limite para participar es hasta las doce p.m (hora de El Salvador) del último día del
+                    mes de
+                    agosto del 2024.<br><br>
+                    6. Un día despues comenzará el proceso de edición, maquetación y subida del poemario a
+                    Amazon.<br><br>
+                    7. Para poder participar deberá completar el formulario(indispensable), a partir de ahí deberá
+                    enviar sus poemas,
+                    biografía y una foto de buena calidad al siguiente correo <a
+                        style="color:blueviolet">poemariocorazondetorogoz@gmail.com</a><br><br>
+                    8. El número de poemas publicados por cada participante estará restringido por el
+                    máximo número de páginas por participante(10).<br><br>
+                    9. No hay ningún costo para el participante.<br><br>
+                    10. Los costos de producción del poemario se esperan obtener de un porcentaje del precio del libro.
+
+                </p>
+                <img class='pensamientos-borde' src="./imagenes/borde.png" alt="borde"></img>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Seccion formulario -->
+        <h3 class="formulario-titulo">Inscríbete</h3>
+        <aside role="alert" class="contenedor-mensaje" id="contenedor-mensaje">
+            <p id="mensaje">Para inscribirte, debes dejar tu nombre(una sola palabra), tu primer apellido, un email y el
+                departamento
+                en el que resides(si resides en el extranjero, selecciona esa opción).</p>
+        </aside>
+        <section class="contenedor-formulario">
+
+            <form class="formulario" id="formulario" data-formulario>
+                <ul>
+                    <li class="formulario-datos">
+                        <label class="formulario-etiquetas" for="nombre">Nombre:</label>
+                        <input class="formulario-input" type="text" autocomplete="off" id="nombre" name="nombre"
+                            required placeholder="Escribe tu nombre" />
+                    </li>
+
+                    <li class="formulario-datos">
+                        <label class="formulario-etiquetas" for="apellido">Apellido:</label>
+                        <input class="formulario-input" type="text" autocomplete="off" id="apellido" name="apellido"
+                            required placeholder="Escribe tu Apellido" />
+                    </li>
+
+                    <li class="formulario-datos">
+                        <label class="formulario-etiquetas" for="email">Correo electrónico:</label>
+                        <input class="formulario-input" type="email" autocomplete="off" id="email" name="email" required
+                            placeholder="Escribe tu email" />
+                    </li>
+
+                    <li class="formulario-datos">
+                        <label class="formulario-etiquetas" for="depa">Departamento:</label>
+                        <select class="formulario-input" title="depa" id="depa" name="depa">
+                            <option value="En el extranjero">En el extranjero</option>
+                            <option value="San Salvador">San Salvador</option>
+                            <option value="La Libertad">La Libertad</option>
+                            <option value="San Miguel">San Miguel</option>
+                            <option value="Santa Ana">Santa Ana</option>
+                            <option value="Sonsonate">Sonsonate</option>
+                            <option value="Ahuchapán">Ahuchapán</option>
+                            <option value="Chalatenango">Chalatenango</option>
+                            <option value="San Vicente">San Vicente</option>
+                            <option value="Usulután">Usulután</option>
+                            <option value="La Unión">La Unión</option>
+                            <option value="Cabañas">Cabañas</option>
+                            <option value="La Paz">La Paz</option>
+                            <option value="Cuscatlán">Cuscatlán</option>
+                            <option value="Morazán">Morazán</option>
+                        </select>
+                    </li>
+
+                    <li class="formulario-contenedor-boton">
+                        <button class="formulario-boton" id="btnGuardar" type="submit">Guardar
+                            Poeta</button>
+                    </li>
+
+                </ul>
+            </form>
+        </section>
+
+    </div>
+    <script src="./js/servicio-Crud.js" type="module"></script>
+</body>
+
+</html>
